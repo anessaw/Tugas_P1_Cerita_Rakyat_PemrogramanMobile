@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Kucing Sang Guru</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="story-app">
+
+        <header class="story-header">
+            <span class="chapter-number" id="chapterNumber">
+                Chapter 1
+            </span>
+
+            <h1 id="storyTitle">
+                Kucing Sang Guru
+            </h1>
+        </header>
+
+
+        <section class="illustration-container">
+            <div class="image-frame">
+                <img
+                    id="storyImage"
+                    src="img/gambar1.jpg"
+                    alt="Ilustrasi cerita Kucing Sang Guru"
+                >
+            </div>
+        </section>
+
+        <section class="story-content">
+
+            <p id="storyText">
+                Dulu di hutan Lampung, hewan-hewan bisa bicara seperti manusia. Yang paling dihormati adalah Kucing. Bukan karena paling kuat, tapi karena paling cerdik dan adil. Muridnya ada tiga: Harimau, Singa, dan Anjing. Setiap hari mereka belajar di bawah pohon
+            </p>
+
+        </section>
+
+
+        <nav class="story-controls">
+
+            <button
+                class="control-button"
+                id="prevButton"
+                aria-label="Cerita sebelumnya"
+            >
+                <span>←</span>
+                <small>Kembali</small>
+            </button>
+
+
+            <button
+                class="control-button voice-button"
+                id="voiceButton"
+                aria-label="Dengarkan cerita"
+            >
+                <span id="voiceIcon">🔊</span>
+                <small>Dengarkan</small>
+            </button>
+
+
+            <button
+                class="control-button"
+                id="nextButton"
+                aria-label="Cerita berikutnya"
+            >
+                <span>→</span>
+                <small>Lanjut</small>
+            </button>
+
+        </nav>
+
+        <audio
+            id="backgroundMusic"
+            src="audio/backsound.mp3"
+            loop>
+        </audio>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
